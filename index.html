@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 <link rel="stylesheet" href="..//css/hover.css">
 </head>
 <body>
@@ -124,25 +125,29 @@ Loren ipsume is know about to young most people just do it forget i like is boot
 <div class="container">
 <h2 class="text-center text-primary txt my-3">Gallery</h2>
 <hr class="w-25 border-info">
-<div class="row no-gutters">
+
+
+<div class="row no-gutters gallery">
 <div class="col-md-4 col-lg-4 col-sm-6 col-12">
-<img src="mack.jpg" class="img img-fluid wow slideInDown pb-3">
-<img src="backlap.jpg" class="img img-fluid wow slideInRight pb-3">
-<img src="chikago.jpg" class="img img-fluid wow ZoomIn pb-3">
+<a href="mack.jpg" target="_blank"><img src="mack.jpg"  class="img img-fluid wow slideInDown pb-3"></a>
+<a href="backlap.jpg" target="_blank"><img src="backlap.jpg" class="img img-fluid wow slideInRight pb-3"></a>
+<a href="chikago.jpg" target="_blank"><img src="chikago.jpg" class="img img-fluid wow ZoomIn pb-3"></a>
 </div>
 <br>
 <div class="col-md-4 col-lg-4 col-sm-6 col-12">
-<img src="com1.jpg" class="img img-fluid wow slideInDown pb-3">
-<img src="3.jpg" class="img img-fluid wow slideInLeft pb-3">
-<img src="mack.jpg" class="img img-fluid wow ZoomDown pb-3">
+<a href="com1.jpg" target="_blank"><img src="com1.jpg" class="img img-fluid wow slideInDown pb-3"></a>
+<a href="3.jpg" target="_blank"><img src="3.jpg" class="img img-fluid waow slideInLeft pb-3"></a>
+<a href="mack.jpg" target="_blank"><img src="mack.jpg" class="img img-fluid wow ZoomDown pb-3"></a>
 </div>
 <br>
 <div class="col-md-4 col-lg-4 col-sm-6 col-12">
-<img src="2.jpg" class="img-fluid wow slideInDown pb-3">
-<img src="1.jpeg" class="img-fluid wow slideInRight pb-3">
-<img src="mack.jpg" class="img-fluid wow slideInLeft pb-3">
+<a href="2.jpg" target="_blank"><img src="2.jpg" class="img-fluid wow slideInDown pb-3"></a>
+<a href="1.jpeg" target="_blank"><img src="1.jpeg" class="img-fluid wow slideInRight pb-3"></a>
+<a href="mack.jpg" target="_blank"><img src="mack.jpg" class="img-fluid wow slideInLeft pb-3"></a>
 </div>
 </div>
+
+
 </div>
 </main>
 <footer>
@@ -181,11 +186,19 @@ Loren ipsume is know about to young most people just do it forget i like is boot
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
+$('.gallery').magnificPopup({
+type: 'image',
+delegate: 'a',
+gallery:{
+enabled:true
+}
+});
 });
 </script>
 </body>
