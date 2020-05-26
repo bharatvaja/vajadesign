@@ -4,11 +4,14 @@ font-family: 'Josefin Sans', sans-serif;
 margib:0px;
 padding:0px;
 box-sizing:border-box;
+scroll-behavior: smooth;
+
 }
 body{
 font-family: 'Josefin Sans', sans-serif;
 margib:0px;
 padding:0px;
+scroll-behavior: smooth;
 box-sizing:border-box;
 }
 .carousel-inner img{
