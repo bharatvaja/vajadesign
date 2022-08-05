@@ -14,6 +14,17 @@ padding:0px;
 scroll-behavior: smooth;
 box-sizing:border-box;
 }
+.txt-width{
+  display:none;
+  justify-content:center;
+  
+}
+.txt-line:hover{
+  width:20vh;
+  border:1px inset green;
+  
+  
+}
 .carousel-inner img{
 width:100%;
 height:20vh;
