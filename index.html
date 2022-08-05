@@ -82,14 +82,15 @@
 <main>
 <div id="main" class="container">
 <h2 class="text-center text-primary hvr-Border Fade txt">About As</h2>
-<hr class="text-center w-25 border-info">
+  <p class="txt-width"></p>
+  <hr class="text-center w-25 border-info">
 <section class="row">
 <div class="col-md-6 col-lg-6">
 <img src="mack.jpg" class="img img-fluid img-thumbnail wow slideInUp hvr-bounce-in">
 </div>
 <div class="col-md-6 col-lg-6">
 <h2 class="text">About_us</h2>
-  <p class="txt"></p>
+  <p class="txt-width"></p>
 <p>
 Loren ipsume is sometime is very importaine lnaguae is just googelr trabsofosfhl harkwor besta know about to webscipting language googel transfomr tranbslte for google asssitiojkslhlfjfs
 Loren ipsume is know about to young most people just do it forget i like is bootstrap page framework for going tonnow about sectiom Page Har and Fats DemobPage Layout Demo...
@@ -101,7 +102,7 @@ Loren ipsume is know about to young most people just do it forget i like is boot
 <br>
 <div id="service" class="container">
 <h2 class="text-center text-primary txt">Our_Service</h2>
-  <p class="txt"></p>
+  <p class="txt-width"></p>
 <hr class="w-25 border-info">
 <div class="row">
 <div class="col-md-4 col-lg-4">
@@ -126,7 +127,7 @@ Loren ipsume is know about to young most people just do it forget i like is boot
 </div>
 <div id="gallery" class="container">
 <h2 class="text-center text-primary txt my-3">Gallery</h2>
-  <p class="txt"></p>
+  <p class="txt-width"></p>
 <hr class="w-25 border-info">
 
 
@@ -156,7 +157,7 @@ Loren ipsume is know about to young most people just do it forget i like is boot
 <footer>
 <div class="container">
 <h2 class="text-center text-primary txt">Contact_Page</h2>
-  <p class="txt"></p>
+  <p class="txt-width"></p>
 <hr class="w-25 border-info">
 <div class="row">
 <div class="col-12">
@@ -196,6 +197,9 @@ Loren ipsume is know about to young most people just do it forget i like is boot
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
+  $("button").click(function(){
+  $(".txt").addClass(red);
+  });
 $('.gallery').magnificPopup({
 type: 'image',
 delegate: 'a',
